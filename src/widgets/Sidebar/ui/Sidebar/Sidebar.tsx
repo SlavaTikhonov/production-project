@@ -1,4 +1,4 @@
-import { classNames } from 'shared/lib/classNames/class.Names';
+import { classNames } from 'shared/lib/classNames/classNames';
 import React, { useState } from 'react';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
 import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher';
@@ -20,6 +20,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
         <div
             className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
         >
+            {/* eslint-disable-next-line i18next/no-literal-string */}
             <Button onClick={onToggle}>toggle</Button>
             <div className={cls.switchers}>
                 <ThemeSwitcher />
