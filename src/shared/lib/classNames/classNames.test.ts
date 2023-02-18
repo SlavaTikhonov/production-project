@@ -2,17 +2,17 @@ import { classNames } from 'shared/lib/classNames/classNames';
 
 describe('classNames', () => {
     test('with only first param', () => {
-        expect(classNames('someClass')).toBe('someClass');
+        expect(classNames('someClass')).toBe('someClass ');
     });
 
     test('with additional class', () => {
-        const expected = 'someClassclass1class2';
+        const expected = 'someClass class1 class2 ';
         expect(classNames('someClass', {}, ['class1', 'class2']))
             .toBe(expected);
     });
 
     test('with mods', () => {
-        const expected = 'someClassclass1class2hovered,scrollable';
+        const expected = 'someClass class1 class2 hovered,scrollable';
         expect(classNames(
             'someClass',
             { hovered: true, scrollable: true },
@@ -21,7 +21,7 @@ describe('classNames', () => {
     });
 
     test('with mods false', () => {
-        const expected = 'someClassclass1class2hovered';
+        const expected = 'someClass class1 class2 hovered';
         expect(classNames(
             'someClass',
             { hovered: true, scrollable: false },
@@ -30,7 +30,7 @@ describe('classNames', () => {
     });
 
     test('with mods undefined', () => {
-        const expected = 'someClassclass1class2hovered';
+        const expected = 'someClass class1 class2 hovered';
         expect(classNames(
             'someClass',
             { hovered: true, scrollable: undefined },
