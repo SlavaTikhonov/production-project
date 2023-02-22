@@ -10,5 +10,7 @@
   "throww error": "throww error",
   "Переключаем": "Переключаем",
   "Кототкий язык": "Ru",
-  "Войти": "Войти"
+  "Войти": "Войти",
+  "increment": "increment",
+  "decrement": "decrement"
 }
