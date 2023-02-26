@@ -13,5 +13,8 @@
   "Кототкий язык": "En",
   "Войти": "Log in",
   "increment": "increment",
-  "decrement": "decrement"
+  "decrement": "decrement",
+  "Логин": "Login",
+  "Пароль": "Password",
+  "Введите имя": "Введите имя"
 }
