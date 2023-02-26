@@ -2,6 +2,8 @@
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
     " Debitis delectus dolor expedita labore, modi molestiae obcaecati provident quaerat sit sunt!": " Debitis delectus dolor expedita labore, modi molestiae obcaecati provident quaerat sit sunt!"
   },
+  "decrement": "decrement",
+  "increment": "increment",
   "throw error": "throw error",
   "throww error": "throww error",
   "Войти": "Войти",
@@ -21,7 +23,5 @@
   "Переключить": "",
   "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
   "Страница не найдена": "Page not found.",
-  "Язык": "Язык",
-  "increment": "increment",
-  "decrement": "decrement"
+  "Язык": "Язык"
 }
