@@ -1,5 +1,4 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import { useTranslation } from 'react-i18next';
 import React, {
     ReactNode, useCallback, useEffect, useRef, useState,
 } from 'react';
@@ -18,8 +17,6 @@ interface ModalProps {
 const ANIMATION_DELAY = 300;
 
 export const Modal = (props: ModalProps) => {
-    const { t } = useTranslation();
-
     const {
         className,
         children,
@@ -81,7 +78,7 @@ export const Modal = (props: ModalProps) => {
 
     return (
         <Portal>
-            <div className={classNames(cls.Modal, mods, [className])}>
+            <div className={classNames(cls.Modal, mods, [className, theme, 'app_modal'])}>
                 {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
                 <div className={cls.overlay} onClick={closeHandler}>
                     {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}

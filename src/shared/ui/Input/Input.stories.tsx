@@ -14,8 +14,8 @@ export default {
 
 const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 
-export const Ligth = Template.bind({});
-Ligth.args = {
+export const Primary = Template.bind({});
+Primary.args = {
     placeholder: 'Type text',
     value: '1234',
     theme: AppInputTheme.PRIMARY,

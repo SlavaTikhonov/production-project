@@ -1,9 +1,7 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import { useTranslation } from 'react-i18next';
 import React, {
     InputHTMLAttributes, memo, useEffect, useRef, useState,
 } from 'react';
-import { AppLinkTheme } from 'shared/ui/AppLink/AppLink';
 import cls from './Input.module.scss';
 
 export enum AppInputTheme {
@@ -22,7 +20,6 @@ interface InputProps extends HTMLInputProps{
 }
 
 export const Input = memo((props: InputProps) => {
-    const { t } = useTranslation();
     const {
         className,
         value,
@@ -30,7 +27,7 @@ export const Input = memo((props: InputProps) => {
         type = 'text',
         placeholder,
         autoFocus,
-        theme = AppLinkTheme.PRIMARY,
+        theme = AppInputTheme.PRIMARY,
         ...otherProps
     } = props;
 
