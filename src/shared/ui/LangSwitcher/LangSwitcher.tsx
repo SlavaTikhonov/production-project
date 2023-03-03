@@ -17,8 +17,9 @@ export const LangSwitcher = ({ className, short }: LangSwitcherProps) => {
 
     return (
         <Button
+            /* i18next-extract-disable-next-line */
             className={classNames('', {}, [className])}
-            theme={ButtonTheme.CLEAR_INVERTED}
+            theme={ButtonTheme.CLEAR}
             onClick={toggle}
         >
             {t(short ? 'Кототкий язык' : 'Язык')}
