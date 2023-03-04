@@ -9,7 +9,7 @@ import { ReduxStoreWithManager } from 'app/providers/StoreProvider/config/StateS
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { getLoginUsername } from '../../model/selectors/getLoginUsername/getLoginUsername';
 import { getLoginPassword } from '../../model/selectors/getLoginPassword/getLoginPassword';
-import { getLoginLoading } from '../../model/selectors/getLoginLoading/getLoginLoading';
+import { getLoginIsLoading } from '../../model/selectors/getLoginIsLoading/getLoginIsLoading';
 import { getLoginError } from '../../model/selectors/getLoginError/getLoginError';
 import { loginByUsername } from '../../model/services/loginByUsername/loginByUsername';
 import { loginActions, loginReducer } from '../../model/slice/loginSlice';
@@ -29,7 +29,7 @@ const LoginForm = memo(({ className }: LoginFormProps) => {
     const dispatch = useDispatch();
     const username = useSelector(getLoginUsername);
     const password = useSelector(getLoginPassword);
-    const isLoading = useSelector(getLoginLoading);
+    const isLoading = useSelector(getLoginIsLoading);
     const error = useSelector(getLoginError);
 
     const onChangeUsername = useCallback((value: string) => {
