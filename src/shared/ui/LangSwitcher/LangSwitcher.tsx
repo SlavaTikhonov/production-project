@@ -17,7 +17,6 @@ export const LangSwitcher = memo(({ className, short }: LangSwitcherProps) => {
 
     return (
         <Button
-            /* i18next-extract-disable-next-line */
             className={classNames('', {}, [className])}
             theme={ButtonTheme.CLEAR}
             onClick={toggle}

@@ -26,13 +26,12 @@
     }
   ],
   "profile": {
-    "first":"Слава",
-    "lastname":"Тихонов",
-    "age":22,
-    "currency":"EUR",
-    "country":"Russia",
-    "city":"Moscow",
-    "username":"admin",
-    "avatar":"https://avatars.githubusercontent.com/u/109621506?v=4"
+    "first": "Слава",
+    "lastname": "Тихонов",
+    "age": 1,
+    "city": "fdf",
+    "username": "Liven",
+    "avatar": "https://amiel.club/uploads/posts/2022-03/1647628341_1-amiel-club-p-klassnie-kartinki-dlya-devochek-1.jpg",
+    "country": "Russia"
   }
 }
