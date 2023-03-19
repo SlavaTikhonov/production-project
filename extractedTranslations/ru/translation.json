@@ -1,5 +1,6 @@
 {
   "": "",
+  "ARTICLE DETAILS": "ARTICLE DETAILS",
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
     " Debitis delectus dolor expedita labore, modi molestiae obcaecati provident quaerat sit sunt!": " Debitis delectus dolor expedita labore, modi molestiae obcaecati provident quaerat sit sunt!"
   },
@@ -24,6 +25,7 @@
   "Главная страница": "Главная страница",
   "Город": "Город",
   "Данные не указаны": "Данные не указаны",
+  "Детали статьи": "Детали статьи",
   "Загрузка": {
     "": {
       "": {
@@ -58,6 +60,7 @@
   "Сер": "Сер",
   "Серверная ошибка при сохранении": "Серверная ошибка при сохранении",
   "Сохранить": "Сохранить",
+  "Статьи": "Статьи",
   "Страница не найдена": "Страница не найдена",
   "Форма авторизации": "Форма авторизации",
   "Язык": "Язык"
