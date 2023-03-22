@@ -107,23 +107,25 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://amiel.club/uploads/posts/2022-03/1647628341_1-amiel-club-p-klassnie-kartinki-dlya-devochek-1.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://amiel.club/uploads/posts/2022-03/1647628341_1-amiel-club-p-klassnie-kartinki-dlya-devochek-1.jpg"
     }
   ],
   "profile": {
-    "first": "Cава",
+    "first": "Cлава",
     "lastname": "asf",
     "age": 465,
     "currency": "RUB",
     "country": "Belarus",
     "city": "Moscow",
     "username": "admin213",
-    "avatar": "https://amiel.club/uploads/posts/2022-03/1647628341_1-amiel-club-p-klassnie-kartinki-dlya-devochek-1.jpg"
+    "avatar": "https://cloudnetworks.ru/wp-content/uploads/Haker.png"
   }
 }
