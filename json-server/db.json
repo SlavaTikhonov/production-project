@@ -19,7 +19,9 @@
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -100,6 +102,18 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "123",
+      "id": "eVIhfbS"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "123444",
+      "id": "llG0nNj"
     }
   ],
   "users": [
@@ -118,14 +132,28 @@
       "avatar": "https://amiel.club/uploads/posts/2022-03/1647628341_1-amiel-club-p-klassnie-kartinki-dlya-devochek-1.jpg"
     }
   ],
-  "profile": {
-    "first": "Cлава",
-    "lastname": "asf",
-    "age": 465,
-    "currency": "RUB",
-    "country": "Belarus",
-    "city": "Moscow",
-    "username": "admin213",
-    "avatar": "https://cloudnetworks.ru/wp-content/uploads/Haker.png"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Cлава",
+      "lastname": "asf",
+      "age": 465,
+      "currency": "RUB",
+      "country": "Belarus",
+      "city": "Moscow",
+      "username": "admin213",
+      "avatar": "https://cloudnetworks.ru/wp-content/uploads/Haker.png"
+    },
+    {
+      "id": "2",
+      "first": "Cлава123",
+      "lastname": "asf",
+      "age": 465,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "SlavaTikhonov",
+      "avatar": "https://amiel.club/uploads/posts/2022-03/1647628341_1-amiel-club-p-klassnie-kartinki-dlya-devochek-1.jpg"
+    }
+  ]
 }
