@@ -1,12 +1,6 @@
-import {
-    createEntityAdapter,
-    createSlice, EntityState, PayloadAction,
-} from '@reduxjs/toolkit';
-
+import { createEntityAdapter, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { Comment } from 'entities/Comment';
 import { StateSchema } from 'app/providers/StoreProvider';
-import { fetchArticleById } from 'entities/Article/model/services/fetchArticleById/fetchArticleById';
-import { Article } from 'entities/Article';
 import {
     fetchCommentsByArticleId,
 } from 'pages/ArticleDetailsPage/model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
@@ -21,7 +15,7 @@ export const getArticleComments = commentsAdapter.getSelectors<StateSchema>(
 );
 
 const articleDetailsCommentsSlice = createSlice({
-    name: 'books',
+    name: 'articleDetailsCommentsSlice',
     initialState: commentsAdapter.getInitialState<ArticleDetailsCommentsSchema>({
         isLoading: false,
         error: undefined,
