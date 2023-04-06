@@ -5,6 +5,7 @@
     " Debitis delectus dolor expedita labore, modi molestiae obcaecati provident quaerat sit sunt!": " Debitis delectus dolor expedita labore, modi molestiae obcaecati provident quaerat sit sunt!"
   },
   "PROFILE PAGE": "PROFILE PAGE",
+  "TIKHONOV APP": "TIKHONOV APP",
   "decrement": "decrement",
   "increment": "increment",
   "throw error": "throw error",
@@ -68,9 +69,13 @@
     "": ""
   },
   "Профиль": "Профиль",
+  "Редактирование статьи ID =": "Редактирование статьи ID =",
   "Редактировать": "Редактировать",
+  "Рекомендуем": "Рекомендуем",
   "Сер": "Сер",
   "Серверная ошибка при сохранении": "Серверная ошибка при сохранении",
+  "Создание новой статьи": "Создание новой статьи",
+  "Создать статью": "Создать статью",
   "Сортировать по": "Сортировать по",
   "Сортировка по": "Сортировка по",
   "Сохранить": "Сохранить",
@@ -87,5 +92,6 @@
   "кол-ву просмотров": "кол-ву просмотров",
   "названию": "названию",
   "по": "по",
+  "рЕКОМЕНДУЕМ": "рЕКОМЕНДУЕМ",
   "убыванию": "убыванию"
 }
