@@ -5,7 +5,7 @@ import {
     profileReducer,
 } from './profileSlice';
 import { updateProfileData } from '../services/updateProfileData/updateProfileData';
-import { ProfileSchema, ValidateProfileError } from '../types/profile';
+import { ProfileSchema, ValidateProfileError } from '../types/editableProfileCardSchema';
 
 const data = {
     username: 'admin',

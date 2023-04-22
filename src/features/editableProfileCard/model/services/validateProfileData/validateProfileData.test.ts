@@ -1,26 +1,26 @@
 import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
-import { ValidateProfileError } from '../../types/profile';
+import { ValidateProfileError } from '../../types/editableProfileCardSchema';
 import { validateProfileData } from './validateProfileData';
 
 const data = {
     username: 'admin',
     age: 22,
     country: Country.Ukraine,
-    lastname: 'Tikhonov',
+    lastname: 'ulbi tv',
     first: 'asd',
     city: 'asf',
     currency: Currency.USD,
 };
 
 describe('validateProfileData.test', () => {
-    test('suсcess', async () => {
+    test('success', async () => {
         const result = validateProfileData(data);
 
         expect(result).toEqual([]);
     });
 
-    test('without first or last name', async () => {
+    test('without first and last name', async () => {
         const result = validateProfileData({ ...data, first: '', lastname: '' });
 
         expect(result).toEqual([
