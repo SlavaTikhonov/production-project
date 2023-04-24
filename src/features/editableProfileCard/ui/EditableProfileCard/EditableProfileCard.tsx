@@ -5,7 +5,6 @@ import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { ProfileCard } from 'entities/Profile';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { Currency } from 'entities/Currency';
 import { Country } from 'entities/Country';
@@ -106,6 +105,7 @@ export const EditableProfileCard = memo((props: EditableProfileCardProps) => {
                         key={err}
                         theme={TextTheme.ERROR}
                         text={validateErrorTranslates[err]}
+                        data-testid="EditableProfileCard.Error"
                     />
                 ))}
                 <ProfileCard
