@@ -1,6 +1,8 @@
 {
   "": "",
   "ARTICLE DETAILS": "ARTICLE DETAILS",
+  "Aдмин панель": "Aдмин панель",
+  "Aдминка": "Aдминка",
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
     " Debitis delectus dolor expedita labore, modi molestiae obcaecati provident quaerat sit sunt!": " Debitis delectus dolor expedita labore, modi molestiae obcaecati provident quaerat sit sunt!"
   },
@@ -87,6 +89,7 @@
   "Статьи не найдены": "Статьи не найдены",
   "Статья не найдена": "Статья не найдена",
   "Страница не найдена": "Страница не найдена",
+  "У вас нет доступа к этой странице": "У вас нет доступа к этой странице",
   "Укажите валюту": "Укажите валюту",
   "Укажите страну": "Укажите страну",
   "Форма авторизации": "Форма авторизации",

@@ -536,14 +536,21 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN",
+      "roles": ["ADMIN"],
       "avatar": "https://amiel.club/uploads/posts/2022-03/1647628341_1-amiel-club-p-klassnie-kartinki-dlya-devochek-1.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER",
+      "roles": ["USER"],
+      "avatar": "https://amiel.club/uploads/posts/2022-03/1647628341_1-amiel-club-p-klassnie-kartinki-dlya-devochek-1.jpg"
+    },
+    {
+      "id": "3",
+      "username": "manager",
+      "password": "123",
+      "roles": ["MANAGER"],
       "avatar": "https://amiel.club/uploads/posts/2022-03/1647628341_1-amiel-club-p-klassnie-kartinki-dlya-devochek-1.jpg"
     }
   ],
