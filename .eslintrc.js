@@ -72,6 +72,13 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'tikhonov-plugin/path-checker': ['error', { alias: '@' }],
+        'tikhonov-plugin/public-api-imports': [
+            'error',
+            {
+                alias: '@',
+                testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+            },
+        ],
     },
     globals: {
         __IS_DEV__: true,
