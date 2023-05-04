@@ -47,19 +47,18 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute:
-                    [
-                        'border',
-                        'role',
-                        'data-testid',
-                        'as',
-                        'to',
-                        'target',
-                        'justify',
-                        'align',
-                        'direction',
-                        'gap',
-                    ],
+                ignoreAttribute: [
+                    'as',
+                    'role',
+                    'data-testid',
+                    'to',
+                    'target',
+                    'justify',
+                    'align',
+                    'border',
+                    'direction',
+                    'gap',
+                ],
             },
         ],
         'max-len': ['error', { ignoreComments: true, code: 125 }],
@@ -72,6 +71,13 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'tikhonov-plugin/path-checker': ['error', { alias: '@' }],
+        'tikhonov-plugin/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
         'tikhonov-plugin/public-api-imports': [
             'error',
             {
