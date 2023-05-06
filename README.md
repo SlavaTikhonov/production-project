@@ -197,3 +197,15 @@ Clear.args = {
 - [profileRating](/src/features/profileRating)
 - [ThemeSwitcher](/src/features/ThemeSwitcher)
 - [UI](/src/features/UI)
+
+## Странницы (pages)
+
+- [AboutPage](/src/pages/AboutPage)
+- [AdminPanelPage](/src/pages/AdminPanelPage)
+- [ArticleDetailsPage](/src/pages/ArticleDetailsPage)
+- [ArticleEditPage](/src/pages/ArticleEditPage)
+- [ArticlesPage](/src/pages/ArticlesPage)
+- [ForbiddenPage](/src/pages/ForbiddenPage)
+- [MainPage](/src/pages/MainPage)
+- [NotFoundPage](/src/pages/NotFoundPage)
+- [ProfilePage](/src/pages/ProfilePage)
