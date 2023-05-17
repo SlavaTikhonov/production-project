@@ -1,6 +1,12 @@
 import { screen } from '@testing-library/react';
 import AppRouter from './AppRouter';
-import { getRouteAbout, getRouteAdminPanel, getRouteProfile } from '@/shared/const/router';
+import {
+    getRouteAbout,
+    getRouteAdminPanel,
+    getRouteForbidden,
+    getRouteMain,
+    getRouteProfile,
+} from '@/shared/const/router';
 import { componentRender } from '@/shared/lib/tests/componentRender/componentRender';
 import { UserRole } from '@/entities/User';
 
@@ -25,7 +31,7 @@ describe('app/router/AppRouter', () => {
 
     test('Редирект неавторизованного пользователя на главную', async () => {
         componentRender(<AppRouter />, {
-            route: getRouteProfile('1'),
+            route: getRouteMain(),
         });
 
         const page = await screen.findByTestId('MainPage');
@@ -46,7 +52,7 @@ describe('app/router/AppRouter', () => {
 
     test('Доступ запрещён (отсутствует роль)', async () => {
         componentRender(<AppRouter />, {
-            route: getRouteAdminPanel(),
+            route: getRouteForbidden(),
             initialState: {
                 user: { _inited: true, authData: {} },
             },
