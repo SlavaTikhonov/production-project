@@ -1,22 +1,29 @@
 import React, {
-    InputHTMLAttributes, memo, useEffect, useRef, useState,
+    InputHTMLAttributes,
+    memo,
+    useEffect,
+    useRef,
+    useState,
 } from 'react';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './Input.module.scss';
 
 export enum AppInputTheme {
-    PRIMARY ='primary',
-    SECONDARY='secondary',
+    PRIMARY = 'primary',
+    SECONDARY = 'secondary',
 }
 
-type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onChange' | 'readOnly'>
+type HTMLInputProps = Omit<
+    InputHTMLAttributes<HTMLInputElement>,
+    'value' | 'onChange' | 'readOnly'
+>;
 
-interface InputProps extends HTMLInputProps{
+interface InputProps extends HTMLInputProps {
     className?: string;
     value?: string | number;
     onChange?: (value: string) => void;
     autoFocus?: boolean;
-    theme?:AppInputTheme;
+    theme?: AppInputTheme;
     readonly?: boolean;
 }
 
@@ -52,11 +59,13 @@ export const Input = memo((props: InputProps) => {
     };
 
     return (
-        <div className={classNames(cls.InputWrapper, { [cls[theme]]: true }, [className])}>
+        <div
+            className={classNames(cls.InputWrapper, { [cls[theme]]: true }, [
+                className,
+            ])}
+        >
             {placeholder && (
-                <div className={cls.placeholder}>
-                    {`${placeholder}:`}
-                </div>
+                <div className={cls.placeholder}>{`${placeholder}:`}</div>
             )}
             <input
                 ref={ref}

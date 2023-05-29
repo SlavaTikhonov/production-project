@@ -10,8 +10,13 @@ import { UserRole } from '@/entities/User';
 import { NotFoundPage } from '@/pages/NotFoundPage';
 import {
     AppRoutes,
-    getRouteAbout, getRouteAdminPanel,
-    getRouteArticles, getRouteArticleCreate, getRouteArticleDetails, getRouteArticleEdit, getRouteForbidden,
+    getRouteAbout,
+    getRouteAdminPanel,
+    getRouteArticles,
+    getRouteArticleCreate,
+    getRouteArticleDetails,
+    getRouteArticleEdit,
+    getRouteForbidden,
     getRouteMain,
     getRouteProfile,
 } from '@/shared/const/router';

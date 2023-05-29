@@ -6,12 +6,12 @@ describe('Роутинг', () => {
             cy.visit('/');
             cy.get(selectByTestId('MainPage')).should('exist');
         });
-        it('Попытка перехода на страницу профиля', () => {
+        it('Переход открывает страницу профиля', () => {
             cy.visit('/profile/1');
             cy.get(selectByTestId('MainPage')).should('exist');
         });
-        it('Попытка перехода по несуществующему адрессу', () => {
-            cy.visit('/ghghfghh');
+        it('Переход открывает несуществующий маршрут ', () => {
+            cy.visit('/fasfasfasf');
             cy.get(selectByTestId('NotFoundPage')).should('exist');
         });
     });
@@ -19,11 +19,12 @@ describe('Роутинг', () => {
         beforeEach(() => {
             cy.login();
         });
-        it('Попытка перехода на страницу профиля', () => {
+        it('Переход открывает страницу профиля', () => {
             cy.visit('/profile/1');
             cy.get(selectByTestId('ProfilePage')).should('exist');
         });
-        it('Попытка перехода на страницу со списком статей', () => {
+
+        it('Переход открывает страницу со списком статей', () => {
             cy.visit('/articles');
             cy.get(selectByTestId('ArticlesPage')).should('exist');
         });

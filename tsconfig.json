@@ -1,33 +1,29 @@
 {
-  "compilerOptions": {
-    "outDir": "./dist/",
-    "noImplicitAny": true,
-    "module": "ESNext",
-    "target": "es5",
-    "jsx": "react-jsx",
-    "allowJs": true,/*не только ts но и js обрабатывать*/
-    "strict": true,
-    "moduleResolution": "node",
-    //Для аболютного импорта
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-
-    //esModuleInterop позволяет работать с пакетами, которые используют
-    // common js как с обычнми пакетами с помощью import (require() module.export) = common js'
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "isolatedModules": true,
-  },
-  "ts-node": {
     "compilerOptions": {
-      "module": "CommonJS"
-    }
-  },
-  "include": [
-    ".config/jest/setupTests.ts",
-    "./src/**/*.ts",
-    "./src/**/*.tsx",
-  ]
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "module": "ESNext",
+        "target": "es5",
+        "jsx": "react-jsx",
+        "allowJs": true /*не только ts но и js обрабатывать*/,
+        "strict": true,
+        "moduleResolution": "node",
+        //Для аболютного импорта
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+
+        //esModuleInterop позволяет работать с пакетами, которые используют
+        // common js как с обычнми пакетами с помощью import (require() module.export) = common js'
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "isolatedModules": true
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    },
+    "include": [".config/jest/setupTests.ts", "./src/**/*.ts", "./src/**/*.tsx"]
 }

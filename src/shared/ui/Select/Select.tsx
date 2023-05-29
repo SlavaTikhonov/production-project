@@ -14,20 +14,13 @@ interface SelectProps<T extends string> {
     options?: SelectOption<T>[];
     value?: T;
     onChange?: (value: T) => void;
-    readonly?:boolean;
+    readonly?: boolean;
 }
 
 export const Select = <T extends string>(props: SelectProps<T>) => {
     const { t } = useTranslation();
 
-    const {
-        className,
-        label,
-        options,
-        onChange,
-        value,
-        readonly,
-    } = props;
+    const { className, label, options, onChange, value, readonly } = props;
 
     const onChangeHandler = (e: ChangeEvent<HTMLSelectElement>) => {
         if (onChange) {
@@ -35,27 +28,25 @@ export const Select = <T extends string>(props: SelectProps<T>) => {
         }
     };
 
-    const optionList = useMemo(() => options?.map((opt) => (
-        <option
-            className={cls.option}
-            value={opt.value}
-            key={opt.value}
-        >
-            {opt.content}
-        </option>
-    )), [options]);
+    const optionList = useMemo(
+        () =>
+            options?.map((opt) => (
+                <option
+                    className={cls.option}
+                    value={opt.value}
+                    key={opt.value}
+                >
+                    {opt.content}
+                </option>
+            )),
+        [options],
+    );
 
-    const mods: Mods = {
-
-    };
+    const mods: Mods = {};
 
     return (
         <div className={classNames(cls.Wrapper, mods, [className])}>
-            {label && (
-                <span className={cls.label}>
-                    {`${label}>`}
-                </span>
-            )}
+            {label && <span className={cls.label}>{`${label}>`}</span>}
             <select
                 disabled={readonly}
                 className={cls.select}
