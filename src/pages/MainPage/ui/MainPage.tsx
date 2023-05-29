@@ -15,8 +15,9 @@ const MainPage = memo(() => {
         <Page data-testid="MainPage">
             <img
                 src="../shared/assets/images/photo_2023-02-17_14-40-01.jpg"
-                alt=""
+                alt="#"
             />
+            <div>12312312312312</div>
             {t('Главная страница')}
         </Page>
     );
