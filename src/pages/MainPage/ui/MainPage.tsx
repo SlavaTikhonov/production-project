@@ -17,7 +17,7 @@ const MainPage = memo(() => {
                 src="../shared/assets/images/photo_2023-02-17_14-40-01.jpg"
                 alt="#"
             />
-            <div>12312312312312</div>
+            <div>123123123123122</div>
             {t('Главная страница')}
         </Page>
     );
