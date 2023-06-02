@@ -13,11 +13,7 @@ const MainPage = memo(() => {
 
     return (
         <Page data-testid="MainPage">
-            <img
-                src="../shared/assets/images/photo_2023-02-17_14-40-01.jpg"
-                alt="#"
-            />
-            <div>123123123123122</div>
+            <div>12312312312223122</div>
             {t('Главная страница')}
         </Page>
     );
