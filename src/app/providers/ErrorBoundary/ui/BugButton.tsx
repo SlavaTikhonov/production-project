@@ -3,23 +3,23 @@ import { useEffect, useState } from 'react';
 import { Button } from '@/shared/ui/Button';
 
 interface BugButtonProps {
-    className?: string;
+  className?: string;
 }
 
 // Компонент для тестирования ErrorBoundary
 
 export const BugButton = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
-    const [error, setError] = useState(false);
+  const [error, setError] = useState(false);
 
-    const onThrow = () => setError(true);
+  const onThrow = () => setError(true);
 
-    useEffect(() => {
-        if (error) {
-            throw new Error();
-        }
-    }, [error]);
+  useEffect(() => {
+    if (error) {
+      throw new Error();
+    }
+  }, [error]);
 
-    return <Button onClick={onThrow}>{t('throww error')}</Button>;
+  return <Button onClick={onThrow}>{t('throww error')}</Button>;
 };

@@ -3,20 +3,20 @@ import { useTranslation } from 'react-i18next';
 import { Page } from '@/widgets/Page';
 
 const MainPage = memo(() => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
-    const [value, setValue] = useState('');
+  const [value, setValue] = useState('');
 
-    const onChange = (val: string) => {
-        setValue(val);
-    };
+  const onChange = (val: string) => {
+    setValue(val);
+  };
 
-    return (
-        <Page data-testid="MainPage">
-            <div>12312312312223122</div>
-            {t('Главная страница')}
-        </Page>
-    );
+  return (
+    <Page data-testid="MainPage">
+      <div>12312312312223122</div>
+      {t('Главная страница')}
+    </Page>
+  );
 });
 
 export default MainPage;
