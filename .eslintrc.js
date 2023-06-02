@@ -9,7 +9,6 @@ module.exports = {
         'airbnb',
         'plugin:i18next/recommended',
         'plugin:storybook/recommended',
-        'prettier',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -30,7 +29,7 @@ module.exports = {
     rules: {
         'unused-imports/no-unused-imports': 'error',
         'react/jsx-filename-extension': [
-            2,
+            4,
             {
                 extensions: ['.js', '.jsx', '.tsx'],
             },
