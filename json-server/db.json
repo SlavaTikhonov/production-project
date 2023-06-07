@@ -562,6 +562,11 @@
         "isArticleRatingEnabled": true,
         "isCounterEnabled": true
       },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
+      },
       "avatar": "https://amiel.club/uploads/posts/2022-03/1647628341_1-amiel-club-p-klassnie-kartinki-dlya-devochek-1.jpg"
     },
     {
@@ -572,6 +577,11 @@
       "features": {
         "isArticleRatingEnabled": false,
         "isCounterEnabled": false
+      },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
       },
       "avatar": "https://amiel.club/uploads/posts/2022-03/1647628341_1-amiel-club-p-klassnie-kartinki-dlya-devochek-1.jpg"
     },
@@ -584,6 +594,11 @@
         "isArticleRatingEnabled": false,
         "isCounterEnabled": true
       },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
+      },
       "avatar": "https://amiel.club/uploads/posts/2022-03/1647628341_1-amiel-club-p-klassnie-kartinki-dlya-devochek-1.jpg"
     },
     {
@@ -594,6 +609,11 @@
       "features": {
         "isArticleRatingEnabled": true,
         "isCounterEnabled": true
+      },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
       },
       "avatar": "https://amiel.club/uploads/posts/2022-03/1647628341_1-amiel-club-p-klassnie-kartinki-dlya-devochek-1.jpg"
     }
