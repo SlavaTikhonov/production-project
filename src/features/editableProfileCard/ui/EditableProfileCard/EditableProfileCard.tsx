@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { memo, useCallback } from 'react';
 import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Text, TextTheme } from '@/shared/ui/Text';
+import { Text, TextTheme } from '@/shared/ui/deprecated/Text';
 import { ProfileCard } from '@/entities/Profile';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
@@ -12,7 +12,7 @@ import {
   DynamicModuleLoader,
   ReducersList,
 } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import { VStack } from '@/shared/ui/Stack';
+import { VStack } from '@/shared/ui/deprecated/Stack';
 import { ValidateProfileError } from '../../model/consts/consts';
 import { EditableProfileCardHeader } from '../../ui/EditableProfileCardHeader/EditableProfileCardHeader';
 import { getProfileReadonly } from '../../model/selectors/getProfileReadonly/getProfileReadonly';
