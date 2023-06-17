@@ -1,13 +1,13 @@
 .ArticleViewSelector {
-  display: flex;
-  justify-content: right;
+  .notSelected {
+    fill: var(--secondary-color);
+  }
 }
 
-.notSelected {
-  fill: var(--secondary-color);
-}
 
-.icon {
-  display: flex;
-  margin-left: 15px;
+
+.ArticleViewSelectorRedesigned {
+  .notSelected {
+    color: var(--light-bg-redesigned);
+  }
 }
