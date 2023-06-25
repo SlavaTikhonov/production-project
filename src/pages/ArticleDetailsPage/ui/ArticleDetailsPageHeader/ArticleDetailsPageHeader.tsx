@@ -7,10 +7,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { getArticleDetailsData } from '@/entities/Article';
 import { HStack } from '@/shared/ui/deprecated/Stack';
 import { getCanEditArticle } from '../../model/selectors/article';
-import {
-  getRouteArticles,
-  getRouteArticleDetails,
-} from '@/shared/const/router';
+import { getRouteArticles, getRouteArticleEdit } from '@/shared/const/router';
 
 interface ArticleDetailsPageHeaderProps {
   className?: string;
@@ -30,7 +27,7 @@ export const ArticleDetailsPageHeader = memo(
 
     const onEditArticle = useCallback(() => {
       if (article) {
-        navigate(getRouteArticleDetails(article?.id));
+        navigate(getRouteArticleEdit(article?.id));
       }
     }, [article, navigate]);
 
