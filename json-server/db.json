@@ -576,7 +576,7 @@
         "isAppRedesigned": true
       },
       "jsonSettings": {
-        "theme": "app_dark_theme",
+        "theme": "app_light_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false,
         "isArticlesPageWasOpened": true
@@ -637,7 +637,7 @@
   "profile": [
     {
       "id": "1",
-      "first": "Cлава",
+      "first": "ClAVA",
       "lastname": "Tikhonov",
       "age": 465,
       "currency": "RUB",
@@ -711,6 +711,12 @@
       "rate": 3,
       "feedback": "123",
       "id": "QirYCiO"
+    },
+    {
+      "userId": "1",
+      "articleId": "9",
+      "rate": 5,
+      "id": "cdgPCwP"
     }
   ],
   "profile-ratings": [
