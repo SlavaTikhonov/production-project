@@ -1,13 +1,11 @@
 import { screen } from '@testing-library/react';
+import { componentRender } from '@/shared/lib/tests/componentRender/componentRender';
 import AppRouter from './AppRouter';
 import {
   getRouteAbout,
   getRouteAdminPanel,
-  getRouteForbidden,
-  getRouteMain,
   getRouteProfile,
 } from '@/shared/const/router';
-import { componentRender } from '@/shared/lib/tests/componentRender/componentRender';
 import { UserRole } from '@/entities/User';
 
 describe('app/router/AppRouter', () => {
@@ -22,7 +20,7 @@ describe('app/router/AppRouter', () => {
 
   test('Страница не найдена', async () => {
     componentRender(<AppRouter />, {
-      route: '/fdfdfdjjhkjhk',
+      route: '/asfasfasfasf',
     });
 
     const page = await screen.findByTestId('NotFoundPage');
@@ -31,14 +29,14 @@ describe('app/router/AppRouter', () => {
 
   test('Редирект неавторизованного пользователя на главную', async () => {
     componentRender(<AppRouter />, {
-      route: getRouteMain(),
+      route: getRouteProfile('1'),
     });
 
     const page = await screen.findByTestId('MainPage');
     expect(page).toBeInTheDocument();
   });
 
-  test('Доступ страницы для авторизованного пользователя', async () => {
+  test('Доступ к закрытой страницы для авторизованного пользователя', async () => {
     componentRender(<AppRouter />, {
       route: getRouteProfile('1'),
       initialState: {
@@ -50,9 +48,9 @@ describe('app/router/AppRouter', () => {
     expect(page).toBeInTheDocument();
   });
 
-  test('Доступ запрещён (отсутствует роль)', async () => {
+  test('Доступ запрещен (отсутствует роль)', async () => {
     componentRender(<AppRouter />, {
-      route: getRouteForbidden(),
+      route: getRouteAdminPanel(),
       initialState: {
         user: { _inited: true, authData: {} },
       },
@@ -62,7 +60,7 @@ describe('app/router/AppRouter', () => {
     expect(page).toBeInTheDocument();
   });
 
-  test('Доступ разрешён (присутствует роль)', async () => {
+  test('Доступ разрешен (присутствует роль)', async () => {
     componentRender(<AppRouter />, {
       route: getRouteAdminPanel(),
       initialState: {
