@@ -1,3 +1,13 @@
+.addonLeft,
+.addonRight {
+  display: flex;
+}
+
+.addonLeft svg,
+.addonRight svg {
+  color: var(--hint-redesigned);
+}
+
 .Button {
   cursor: pointer;
   color: var(--text-redesigned);
@@ -8,7 +18,8 @@
   &:hover {
     color: var(--accent-redesigned);
 
-    .addonLeft svg, .addonRight svg{
+    .addonLeft svg,
+    .addonRight svg {
       color: var(--accent-redesigned);
     }
   }
@@ -16,14 +27,6 @@
 
 .withAddon {
   padding: 0 16px;
-}
-
-.addonLeft, .addonRight {
-  display: flex;
-}
-
-.addonLeft svg, .addonRight svg {
-  color: var(--hint-redesigned);
 }
 
 .clear {
@@ -46,7 +49,7 @@
   border-radius: 34px;
 
   &.normal {
-    border:2px solid var(--icon-redesigned);
+    border: 2px solid var(--icon-redesigned);
 
     &:hover {
       border: 2px solid var(--accent-redesigned);
@@ -54,15 +57,15 @@
   }
 
   &.success {
-    border:2px solid var(--save-redesigned);
+    border: 2px solid var(--save-redesigned);
 
     &:hover {
       opacity: 0.8;
     }
-    }
+  }
 
   &.error {
-    border:2px solid var(--cancel-redesigned);
+    border: 2px solid var(--cancel-redesigned);
 
     &:hover {
       opacity: 0.8;
@@ -84,7 +87,7 @@
   height: var(--font-line-l);
 }
 
-.square.l {
+.square.xl {
   width: var(--font-line-xl);
   height: var(--font-line-xl);
 }
@@ -98,7 +101,7 @@
 }
 
 .xl {
-  font: var(---font-m-redesigned);
+  font: var(--font-m-redesigned);
 }
 
 .disabled {
