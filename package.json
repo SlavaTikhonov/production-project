@@ -1,10 +1,13 @@
 {
   "name": "first-project-webpack-ts",
   "version": "1.0.0",
+  "homepage": "https://SlavaTikhonov.github.io/production-project",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --env port=3000",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "start:vite": "vite",
     "start:dev": "concurrently \"npm start\" \"npm run start:dev:server\"",
     "start:dev:vite": "concurrently \"npm run start:vite\" \"npm run start:dev:server\"",
@@ -94,6 +97,7 @@
     "eslint-plugin-unused-imports": "^2.0.0",
     "file-loader": "^6.2.0",
     "fork-ts-checker-webpack-plugin": "^8.0.0",
+    "gh-pages": "^6.0.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.0",
     "identity-obj-proxy": "^3.0.0",
