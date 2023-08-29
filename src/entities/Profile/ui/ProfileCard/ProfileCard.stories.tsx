@@ -4,8 +4,6 @@ import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
 import avatar from '@/shared/assets/tests/storybook.jpg';
 import { ProfileCard } from './ProfileCard';
-import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { Theme } from '@/shared/const/theme';
 import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
 
 export default {
@@ -25,7 +23,7 @@ const primaryArgs = {
     username: 'admin',
     age: 22,
     country: Country.Ukraine,
-    lastname: 'Tikhonov',
+    lastname: 'ulbi tv',
     first: 'asd',
     city: 'asf',
     currency: Currency.USD,
@@ -38,7 +36,7 @@ Primary.args = primaryArgs;
 
 export const PrimaryRedesigned = Template.bind({});
 PrimaryRedesigned.args = primaryArgs;
-PrimaryRedesigned.decorators = [NewDesignDecorator, ThemeDecorator(Theme.DARK)];
+PrimaryRedesigned.decorators = [NewDesignDecorator];
 
 export const withError = Template.bind({});
 withError.args = {
