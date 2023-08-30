@@ -1,7 +1,7 @@
 {
   "name": "first-project-webpack-ts",
   "version": "1.0.0",
-  "homepage": "https://SlavaTikhonov.github.io/production-project",
+  "homepage": "https://SlavaTikhonov.github.io/my-pet-project",
   "description": "",
   "main": "index.js",
   "scripts": {
