@@ -77,9 +77,6 @@ jobs:
       - name: unit testing
         if: always()
         run: npm run test:unit
-      - name: move loki
-        run: mv .loki reports/
-        if: always()
       - name: Setup Pages
         uses: actions/configure-pages@v2
         if: always()
